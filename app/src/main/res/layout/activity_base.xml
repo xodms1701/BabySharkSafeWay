@@ -1,0 +1,125 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/mainLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:background="@color/mainSearchBarColor"
+        android:layout_width="match_parent"
+        android:elevation="2dp"
+        android:layout_height="@dimen/main_searhbar_height">
+
+
+
+        <RelativeLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/searchbarimage"
+            android:layout_weight="4.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dip">
+
+            <EditText
+                android:cursorVisible="false"
+                android:singleLine="true"
+                android:id="@+id/et_start_lot"
+                android:textColorHint="@android:color/black"
+                android:hint="@string/start_lot_holder"
+                android:background="@android:color/white"
+                android:layout_toRightOf="@+id/startLotImagebtn"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"/>
+
+
+            <ImageView
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/startLotImagebtn"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_main_search"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_main_bottom"
+                android:layout_width="20dp"
+                android:layout_height="10dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/searchbarimage"
+            android:layout_weight="4.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dip">
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:id="@+id/endLotImageBtn"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_main_search"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <EditText
+                android:id="@+id/et_end_lot"
+                android:background="@android:color/white"
+                android:textColorHint="@android:color/black"
+                android:hint="@string/end_lot_holder"
+                android:layout_toRightOf="@+id/endLotImageBtn"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/settingBtn"
+            android:layout_margin="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_main_db"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+        </ImageView>
+    </RelativeLayout>
+
+
+
+</FrameLayout>
+
+

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BabySharkSafeWay</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="start_lot_holder">출발지를 입력해주세요.</string>
+    <string name="end_lot_holder">도착지를 입력해주세요.</string>
+    <string name="wrong_input">값을 입력해주세요.</string>
+
+</resources>

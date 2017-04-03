@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gonigoni.ui.searchresult.SearchResultActivity">
+
+    <RelativeLayout
+        android:elevation="4dp"
+        android:id="@+id/toolbar"
+        android:background="@color/mainSearchBarColor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+        <TextView
+            android:id="@+id/toolbarTitleTextView"
+            android:textSize="23sp"
+            android:textColor="@android:color/white"
+            android:paddingLeft="10dp"
+            android:text="asdasdasdasdasd"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_research"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/white"
+                android:text="검색결과가 제공됩니다."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="20dp"
+            android:elevation="4dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:layout_centerVertical="true"
+            android:text="키워드 검색 결과 입니다."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

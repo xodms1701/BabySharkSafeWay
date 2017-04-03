@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.gonigoni.babysharksafeway"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name="com.gonigoni.ui.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gonigoni.ui.main.MainActivity">
+        </activity>
+        <activity android:name="com.gonigoni.ui.setting.SettingActivity">
+        </activity>
+        <activity android:name="com.gonigoni.ui.commant.CommantActivity">
+        </activity>
+        <activity android:name="com.gonigoni.ui.searchresult.SearchResultActivity">
+        </activity>
+
+        <service
+            android:name="com.gonigoni.utill.LoopService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+    </application>
+
+</manifest>
